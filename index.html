@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Vanshika &amp; Chaksu — Wedding Invitation</title>
+  <meta name="description"
+    content="Vanshika and Chaksu cordially invite you to celebrate their wedding on November 24, 2026 at SN Auditorium Olari, Thrissur, Kerala.">
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vanshika &amp; Chaksu — Wedding Invitation">
+  <meta property="og:description"
+    content="Vanshika and Chaksu cordially invite you to celebrate their wedding on November 24, 2026 at SN Auditorium Olari, Thrissur, Kerala.">
+  <meta property="og:image" content="https://media.invitestory.in/sage-parchment/og-image.jpg">
+  <meta property="og:image:alt" content="Vanshika &amp; Chaksu Wedding Invitation">
+  <meta property="og:site_name" content="Vanshika &amp; Chaksu Wedding">
+
+  <!-- Google Fonts: Cormorant Garamond, EB Garamond, Marcellus, Pinyon Script, Karla -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Karla:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Marcellus&family=Pinyon+Script&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --parchment: #FAF7EE;
+      --parchment-deep: #F1EBDB;
+      --parchment-card: #FAF6ED;
+      --sage-deep: #4B5B44;
+      --gilt: #A48A55;
+      --pine: #2D3A2B;
+      --pine-deep: #212B20;
+      --pine-soft: #42523F;
+      --gold: #C2A35D;
+      --gold-light: #DFCA8C;
+      --gold-soft: rgba(194, 163, 93, 0.35);
+      --gold-faint: rgba(194, 163, 93, 0.15);
+      --ink: #1C221A;
+      --ink-soft: #556350;
+      --ink-faint: #7A8975;
+      --line: rgba(194, 163, 93, 0.35);
+
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-marcellus: 'Marcellus', 'Trajan Pro', Georgia, serif;
+      --font-garamond: 'EB Garamond', 'Cormorant Garamond', Garamond, Georgia, serif;
+      --font-script: 'Pinyon Script', cursive;
+      --font-body: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--parchment);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    body {
+      background-color: var(--parchment);
+      background-image:
+        radial-gradient(circle at 15% 20%, rgba(194, 163, 93, 0.04), transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(45, 58, 43, 0.03), transparent 50%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cpath d='M22 4 L40 22 L22 40 L4 22 Z' fill='none' stroke='%23C2A35D' stroke-width='0.75' stroke-opacity='0.08'/%3E%3Ccircle cx='22' cy='22' r='1.5' fill='%23C2A35D' fill-opacity='0.08'/%3E%3C/svg%3E");
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    body.locked {
+      overflow: hidden;
+    }
+
+    /* Top Scroll Progress Indicator */
+    #scrollProgress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--gold);
+      z-index: 100;
+      transition: width 0.1s ease-out;
+      transform-origin: left;
+    }
+
+    /* Floating Music Toggle */
+    #musicToggle {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 90;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: rgba(250, 247, 238, 0.92);
+      border: 1px solid var(--gold);
+      box-shadow: 0 8px 24px -6px rgba(28, 34, 26, 0.25);
+      backdrop-filter: blur(8px);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s ease, background 0.2s, box-shadow 0.25s;
+    }
+
+    #musicToggle:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 28px -4px rgba(194, 163, 93, 0.4);
+    }
+
+    #musicToggle:active {
+      transform: scale(0.95);
+    }
+
+    .equalizer {
+      display: flex;
+      align-items: flex-end;
+      gap: 3px;
+      height: 16px;
+    }
+
+    .equalizer span {
+      width: 2.5px;
+      background: var(--pine);
+      border-radius: 1px;
+      transition: height 0.2s ease;
+    }
+
+    .equalizer.playing span:nth-child(1) {
+      animation: soundwave 0.8s ease-in-out infinite alternate;
+    }
+
+    .equalizer.playing span:nth-child(2) {
+      animation: soundwave 1.1s ease-in-out 0.2s infinite alternate;
+    }
+
+    .equalizer.playing span:nth-child(3) {
+      animation: soundwave 0.9s ease-in-out 0.4s infinite alternate;
+    }
+
+    @keyframes soundwave {
+      0% {
+        height: 4px;
+      }
+
+      100% {
+        height: 16px;
+      }
+    }
+
+    /* Floating Lotus Petals */
+    #petalsContainer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 30;
+      overflow: hidden;
+    }
+
+    .petal {
+      position: absolute;
+      top: -40px;
+      pointer-events: none;
+      animation: petalFall var(--dur, 20s) linear var(--delay, 0s) infinite;
+      opacity: var(--op, 0.2);
+      filter: drop-shadow(0 2px 4px rgba(45, 58, 43, 0.08));
+    }
+
+    @keyframes petalFall {
+      0% {
+        transform: translate3d(0, 0, 0) rotate(0deg) scale(0.9);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: var(--op, 0.25);
+      }
+
+      90% {
+        opacity: var(--op, 0.2);
+      }
+
+      100% {
+        transform: translate3d(var(--drift, 50px), 108vh, 0) rotate(360deg) scale(1.1);
+        opacity: 0;
+      }
+    }
+
+    /* ==========================================================================
+       ROYAL ENVELOPE / GATEFOLD OPENING SCREEN
+       ========================================================================== */
+    #gatefold {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease;
+    }
+
+    #gatefold.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .gate-door {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: var(--pine);
+      background-image:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, transparent 60%),
+        url("https://media.invitestory.in/sage-parchment/src/assets/gate-panel.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      transition: transform 1.6s cubic-bezier(0.83, 0, 0.17, 1);
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .gate-door.left {
+      left: 0;
+      background-position: left center;
+      border-right: 1px solid rgba(194, 163, 93, 0.6);
+    }
+
+    .gate-door.right {
+      right: 0;
+      background-position: right center;
+      border-left: 1px solid rgba(194, 163, 93, 0.6);
+    }
+
+    .gate-door::before {
+      content: "";
+      position: absolute;
+      inset: 16px;
+      border: 1px solid rgba(194, 163, 93, 0.28);
+      border-radius: 2rem;
+      pointer-events: none;
+    }
+
+    .gate-door::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 50%, rgba(0, 0, 0, 0.4) 100%);
+      pointer-events: none;
+    }
+
+    #gatefold.opened .gate-door.left {
+      transform: translate3d(-102%, 0, 0);
+    }
+
+    #gatefold.opened .gate-door.right {
+      transform: translate3d(102%, 0, 0);
+    }
+
+    /* Gatefold Center Content */
+    .gate-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 32px 24px;
+      max-width: 460px;
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    #gatefold.opened .gate-content {
+      opacity: 0;
+      transform: scale(1.1);
+      pointer-events: none;
+    }
+
+    .gate-kicker {
+      font-family: var(--font-body);
+      font-size: 1.00rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 24px;
+    }
+
+    /* Central Mandala Seal */
+    .gate-seal-wrap {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mandala-dashed {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 1px dashed rgba(194, 163, 93, 0.5);
+      animation: spinMandala 46s linear infinite;
+    }
+
+    @keyframes spinMandala {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .mandala-glass {
+      position: absolute;
+      inset: 14px;
+      border-radius: 50%;
+      border: 1px solid rgba(194, 163, 93, 0.75);
+      background: rgba(250, 247, 238, 0.08);
+      backdrop-filter: blur(3px);
+    }
+
+    .mandala-pulse {
+      position: absolute;
+      inset: 14px;
+      border-radius: 50%;
+      border: 1px solid var(--gold);
+      animation: pulseAura 3.4s ease-in-out infinite;
+    }
+
+    @keyframes pulseAura {
+      0% {
+        transform: scale(1);
+        opacity: 0.35;
+      }
+
+      50% {
+        transform: scale(1.15);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 0.35;
+      }
+    }
+
+    .gate-monogram {
+      position: relative;
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      letter-spacing: 0.08em;
+      color: var(--parchment);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .gate-monogram span {
+      color: var(--gold);
+      margin: 0 4px;
+      font-size: 0.85em;
+    }
+
+    .gate-names {
+      margin-top: 32px;
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 1.5rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--parchment);
+    }
+
+    .gate-date {
+      margin-top: 10px;
+      font-family: var(--font-marcellus);
+      font-size: 1.3rem;
+      letter-spacing: 0.3em;
+      color: var(--gold-light);
+    }
+
+    .gate-date .shimmer {
+      display: inline-block;
+    }
+
+    /* Open Invitation Button */
+    .btn-open {
+      position: relative;
+      margin-top: 40px;
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 9999px;
+      border: 1px solid rgba(194, 163, 93, 0.75);
+      background: transparent;
+      padding: 14px 38px;
+      font-family: var(--font-body);
+      font-size: 0.68rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--parchment);
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .btn-open:hover {
+      background: rgba(194, 163, 93, 0.18);
+    }
+
+    .btn-open:active {
+      transform: scale(0.96);
+    }
+
+    .btn-open .shimmer {
+      position: absolute;
+      inset-block: 0;
+      width: 40%;
+      background: linear-gradient(to right, transparent, rgba(250, 247, 238, 0.3), transparent);
+      animation: shimmerSlide 2.6s ease-in-out infinite;
+    }
+
+    @keyframes shimmerSlide {
+      0% {
+        transform: translateX(-150%);
+      }
+
+      100% {
+        transform: translateX(250%);
+      }
+    }
+
+    /* ==========================================================================
+       SHARED DECORATIVE ELEMENTS & RULES
+       ========================================================================== */
+    .gold-rule {
+      position: relative;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold) 20%, var(--gold) 80%, transparent);
+      margin: 20px auto;
+    }
+
+    .gold-rule::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+    }
+
+    .gold-rule.w-20 {
+      width: 80px;
+    }
+
+    .gold-rule.w-24 {
+      width: 96px;
+    }
+
+    .gold-rule.w-28 {
+      width: 112px;
+    }
+
+    .gold-rule.w-32 {
+      width: 128px;
+    }
+
+    .gold-rule.w-52 {
+      width: 208px;
+    }
+
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(28px);
+      filter: blur(5px);
+      transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1s cubic-bezier(0.16, 1, 0.3, 1),
+        filter 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-on-scroll.revealed {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+
+    /* ==========================================================================
+       HERO SECTION: MUGHAL ARCH
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+      background-color: var(--parchment);
+      text-align: center;
+    }
+
+    .hero-backdrop {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transform: translateY(0);
+      transition: transform 0.1s linear;
+    }
+
+    .hero-gradient-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(45, 58, 43, 0.22) 0%, transparent 40%, var(--parchment) 100%);
+    }
+
+    .hero-fade-bottom {
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 280px;
+      background: linear-gradient(to top, var(--parchment) 0%, rgba(250, 247, 238, 0.95) 55%, transparent 100%);
+      z-index: 10;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 20;
+      margin-top: auto;
+      width: 100%;
+      padding: 80px 24px 28px;
+    }
+
+    /* Gold shimmer / transparency effect on accents, 'and', and dates */
+    .shimmer {
+      background: linear-gradient(100deg, var(--gilt, #A48A55) 0%, var(--gilt, #A48A55) 40%, #E6D3A3 50%, var(--gilt, #A48A55) 60%, var(--gilt, #A48A55) 100%);
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: textShimmer 4.5s ease-in-out infinite;
+    }
+
+    .btn-open .shimmer {
+      -webkit-background-clip: border-box;
+      background-clip: border-box;
+      color: inherit;
+    }
+
+    @keyframes textShimmer {
+      0% {
+        background-position: 120% 0;
+      }
+
+      60%,
+      100% {
+        background-position: -20% 0;
+      }
+    }
+
+    .hero-kicker {
+      font-family: var(--font-marcellus);
+      font-size: 11px;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin: 0 0 14px;
+    }
+
+    .hero-names {
+      margin: 14px 0 0;
+      font-family: var(--font-marcellus);
+      font-weight: 400;
+      font-size: clamp(40px, 8.5vw, 68px);
+      line-height: 1.15;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sage-deep, #4B5B44);
+      text-shadow: 0 0 22px rgba(235, 226, 206, 0.9);
+    }
+
+    .hero-names .hero-and {
+      font-family: var(--font-garamond);
+      font-style: italic;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 0.5em;
+      vertical-align: middle;
+      padding-inline: 0.1em;
+      display: inline-block;
+    }
+
+    .hero-invitation-line {
+      margin-top: 14px;
+      font-size: 16px;
+      color: var(--ink-soft);
+      font-family: var(--font-garamond);
+    }
+
+    .hero-date {
+      margin: 10px 0 2px;
+      font-family: var(--font-marcellus);
+      font-size: clamp(24px, 4.5vw, 32px);
+      letter-spacing: 0.14em;
+      color: var(--gilt, #A48A55);
+    }
+
+    .hero-date .shimmer {
+      display: inline-block;
+    }
+
+    .hero-venue-tag {
+      margin-top: 8px;
+      font-family: var(--font-marcellus);
+      font-size: 12px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .hero-scroll-indicator {
+      position: relative;
+      z-index: 20;
+      padding-bottom: 24px;
+      text-align: center;
+      transition: opacity 0.5s ease;
+    }
+
+    .hero-scroll-indicator span {
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: rgba(28, 34, 26, 0.6);
+      display: block;
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 32px;
+      background: var(--gold);
+      margin: 8px auto 0;
+      animation: dripLine 2.2s ease-in-out infinite;
+      transform-origin: top;
+    }
+
+    @keyframes dripLine {
+      0% {
+        transform: scaleY(0.2);
+      }
+
+      50% {
+        transform: scaleY(1);
+      }
+
+      100% {
+        transform: scaleY(0.2);
+      }
+    }
+
+    /* ==========================================================================
+       COUNTDOWN SECTION
+       ========================================================================== */
+    .countdown-section {
+      position: relative;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .section-kicker {
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: rgba(28, 34, 26, 0.6);
+    }
+
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      max-width: 440px;
+      margin: 32px auto 0;
+    }
+
+    .countdown-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 2.2rem 2.2rem 0 0;
+      border: 1px solid rgba(194, 163, 93, 0.45);
+      background: rgba(241, 235, 219, 0.75);
+      padding: 20px 4px 16px;
+      box-shadow: 0 10px 30px -22px var(--ink);
+    }
+
+    .countdown-card::before {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      inset: 8px 8px auto;
+      height: 32px;
+      border-radius: 1.8rem 1.8rem 0 0;
+      border: 1px solid rgba(194, 163, 93, 0.25);
+    }
+
+    .countdown-val {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(2rem, 5vw, 2.6rem);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      color: var(--pine);
+      display: block;
+    }
+
+    .countdown-lbl {
+      margin-top: 8px;
+      display: block;
+      font-size: 0.58rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(28, 34, 26, 0.6);
+    }
+
+    .countdown-subtext {
+      margin-top: 24px;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: rgba(28, 34, 26, 0.7);
+    }
+
+    /* ==========================================================================
+       OUR STORY / TIMELINE SECTION
+       ========================================================================== */
+    .story-section {
+      position: relative;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--pine);
+      text-align: center;
+    }
+
+    .timeline-container {
+      position: relative;
+      max-width: 600px;
+      margin: 48px auto 0;
+    }
+
+    .timeline-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 24px;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(194, 163, 93, 0.5), transparent);
+    }
+
+    @media (min-width: 640px) {
+      .timeline-line {
+        left: 50%;
+      }
+    }
+
+    .story-item {
+      position: relative;
+      margin-bottom: 56px;
+      padding-left: 64px;
+    }
+
+    @media (min-width: 640px) {
+      .story-item {
+        padding-left: 0;
+      }
+
+      .story-item:nth-child(even) .story-row {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .timeline-diamond {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      z-index: 10;
+      width: 8px;
+      height: 8px;
+      transform: translate(-50%, 0) rotate(45deg);
+      background: var(--gold);
+    }
+
+    @media (min-width: 640px) {
+      .timeline-diamond {
+        left: 50%;
+      }
+    }
+
+    .story-row {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    @media (min-width: 640px) {
+      .story-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 28px;
+      }
+
+      .story-col-img,
+      .story-col-text {
+        width: 50%;
+      }
+    }
+
+    .story-card-img {
+      overflow: hidden;
+      border-radius: 3rem 3rem 0 0;
+      border: 1px solid rgba(194, 163, 93, 0.4);
+      background: var(--parchment-deep);
+    }
+
+    .story-card-img img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .story-card-img:hover img {
+      transform: scale(1.05);
+    }
+
+    .story-year {
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .story-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--pine);
+      margin-bottom: 8px;
+    }
+
+    .story-desc {
+      font-size: 0.88rem;
+      color: rgba(28, 34, 26, 0.75);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       THE WEDDING ARCH CARD (INVITATION CARD)
+       ========================================================================== */
+    .event-card-section {
+      position: relative;
+      padding: 70px 20px;
+      overflow: hidden;
+    }
+
+    .arch-card-wrap {
+      position: relative;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    .arch-card {
+      position: relative;
+      border-radius: 9rem 9rem 0 0;
+      border: 1px solid rgba(194, 163, 93, 0.55);
+      background: var(--parchment);
+      padding: 64px 28px 40px;
+      text-align: center;
+      box-shadow: 0 30px 60px -40px var(--ink);
+    }
+
+    .arch-card::before {
+      content: "";
+      position: absolute;
+      inset: 12px;
+      top: 12px;
+      border-radius: 8.4rem 8.4rem 0 0;
+      border: 1px solid rgba(194, 163, 93, 0.3);
+      pointer-events: none;
+    }
+
+    .arch-card-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: rgba(28, 34, 26, 0.65);
+    }
+
+    .arch-card-date {
+      margin-top: 16px;
+      font-family: var(--font-marcellus);
+      font-size: clamp(24px, 4.5vw, 32px);
+      letter-spacing: 0.14em;
+      color: var(--gilt, #A48A55);
+    }
+
+    .arch-card-date .shimmer {
+      display: inline-block;
+    }
+
+    .event-details-list {
+      list-style: none;
+      margin: 32px auto 0;
+      max-width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      font-size: 0.88rem;
+      color: rgba(28, 34, 26, 0.85);
+      text-align: left;
+    }
+
+    .event-details-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      text-align: left;
+    }
+
+    .event-icon-wrap {
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .event-icon {
+      width: 18px;
+      height: 18px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .event-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .event-title {
+      font-weight: 600;
+      color: var(--pine);
+      font-size: 0.94rem;
+      line-height: 1.35;
+    }
+
+    .event-sub {
+      font-size: 0.84rem;
+      line-height: 1.45;
+      color: rgba(28, 34, 26, 0.75);
+    }
+
+    .event-schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-top: 3px;
+    }
+
+    .event-schedule-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: rgba(28, 34, 26, 0.8);
+    }
+
+    .event-schedule-item strong {
+      color: var(--pine);
+      font-weight: 600;
+    }
+
+    .arch-card-note {
+      margin-top: 24px;
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: rgba(28, 34, 26, 0.65);
+    }
+
+    .card-actions {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-pine {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 9999px;
+      background: var(--pine);
+      color: var(--parchment);
+      padding: 14px 24px;
+      font-size: 0.7rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+      border: 1px solid var(--pine);
+    }
+
+    .btn-pine:hover {
+      background: var(--pine-soft);
+      transform: translateY(-2px);
+    }
+
+    .btn-pine:active {
+      transform: scale(0.97);
+    }
+
+    .btn-outline-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 9999px;
+      background: transparent;
+      color: rgba(28, 34, 26, 0.8);
+      border: 1px solid rgba(194, 163, 93, 0.6);
+      padding: 12px 24px;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-outline-gold:hover {
+      background: rgba(194, 163, 93, 0.12);
+    }
+
+    .btn-outline-gold:active {
+      transform: scale(0.97);
+    }
+
+    /* ==========================================================================
+       THE VENUE SECTION
+       ========================================================================== */
+    .venue-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .venue-wrap {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .venue-card-img {
+      position: relative;
+      margin-top: 32px;
+      display: block;
+      overflow: hidden;
+      border-radius: 3rem 3rem 0 0;
+      border: 1px solid rgba(194, 163, 93, 0.5);
+      box-shadow: 0 24px 50px -40px var(--ink);
+      text-decoration: none;
+      group: "";
+    }
+
+    .venue-card-img img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+      transition: transform 1.6s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .venue-card-img:hover img {
+      transform: scale(1.06);
+    }
+
+    .venue-pill {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 9999px;
+      background: rgba(250, 247, 238, 0.92);
+      border: 1px solid rgba(194, 163, 93, 0.5);
+      padding: 8px 18px;
+      font-size: 0.62rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: rgba(28, 34, 26, 0.85);
+      backdrop-filter: blur(4px);
+    }
+
+    .venue-name {
+      margin-top: 28px;
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--pine);
+    }
+
+    .venue-addr {
+      margin-top: 8px;
+      font-size: 0.88rem;
+      color: rgba(28, 34, 26, 0.7);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       MOMENTS / GALLERY SECTION
+       ========================================================================== */
+    .moments-section {
+      padding: 60px 0;
+    }
+
+    .gallery-scroll {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 36px 20px 16px;
+      scrollbar-width: none;
+    }
+
+    .gallery-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gallery-item {
+      position: relative;
+      flex-shrink: 0;
+      width: 72vw;
+      max-width: 300px;
+      scroll-snap-align: center;
+      overflow: hidden;
+      border-radius: 3rem 3rem 0 0;
+      border: 1px solid rgba(194, 163, 93, 0.45);
+      background: var(--parchment-deep);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:active {
+      transform: scale(0.97);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-item::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border-radius: 2.7rem 2.7rem 0 0;
+      border: 1px solid rgba(250, 247, 238, 0.4);
+      pointer-events: none;
+    }
+
+    /* Fullscreen Image Lightbox */
+    #lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(33, 43, 32, 0.94);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+
+    #lightbox.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(250, 247, 238, 0.15);
+      border: 1px solid rgba(194, 163, 93, 0.5);
+      color: var(--parchment);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: background 0.2s;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(194, 163, 93, 0.3);
+    }
+
+    .lightbox-img {
+      max-height: 80vh;
+      max-width: 90vw;
+      border-radius: 3rem 3rem 0 0;
+      border: 1px solid rgba(194, 163, 93, 0.6);
+      object-fit: contain;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+      transform: scale(0.92);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    #lightbox.active .lightbox-img {
+      transform: scale(1);
+    }
+
+    /* ==========================================================================
+       BLESSING SECTION
+       ========================================================================== */
+    .blessing-section {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .blessing-wrap {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    .blessing-text {
+      margin-top: 32px;
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: var(--pine);
+    }
+
+    .blessing-translation {
+      margin-top: 20px;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      line-height: 1.6;
+      font-style: italic;
+      color: rgba(28, 34, 26, 0.75);
+    }
+
+    .blessing-source {
+      margin-top: 16px;
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ==========================================================================
+       FOOTER SECTION
+       ========================================================================== */
+    .footer-section {
+      position: relative;
+      padding: 96px 20px 48px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .footer-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom center;
+      opacity: 0.45;
+    }
+
+    .footer-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(to bottom, var(--parchment) 0%, rgba(250, 247, 238, 0.75) 50%, var(--parchment) 100%);
+    }
+
+    .footer-content {
+      position: relative;
+      z-index: 10;
+    }
+
+    .footer-names {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--pine);
+    }
+
+    .footer-names span {
+      color: var(--gold);
+    }
+
+    .footer-msg {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      color: rgba(28, 34, 26, 0.85);
+    }
+
+    .footer-hashtag {
+      margin-top: 36px;
+      font-size: 0.65rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: rgba(28, 34, 26, 0.6);
+    }
+
+    .footer-credit {
+      margin-top: 16px;
+      display: inline-block;
+      font-size: 0.65rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      text-decoration: none;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .footer-credit:hover {
+      opacity: 1;
+    }
+
+    /* WhatsApp Wishes Floating Button */
+    .btn-wishes {
+      margin-top: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 9999px;
+      background: rgba(250, 247, 238, 0.85);
+      border: 1px solid var(--gold);
+      padding: 10px 22px;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--pine);
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-wishes:hover {
+      background: var(--gold);
+      color: var(--parchment);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body class="locked">
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scrollProgress"></div>
+
+  <!-- Music Audio Player Toggle -->
+  <button id="musicToggle" aria-label="Toggle Background Music" title="Play / Pause Wedding Flute Music">
+    <div class="equalizer" id="equalizer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+  <!-- Floating Lotus Petals Overlay -->
+  <div id="petalsContainer" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       1. ROYAL GATEFOLD / OPENING SCREEN (Open the Invitation)
+       ======================================================================== -->
+  <aside id="gatefold" aria-label="Invitation Gatefold">
+    <div class="gate-door left"></div>
+    <div class="gate-door right"></div>
+
+    <div class="gate-content">
+      <p class="gate-kicker">Together with their families</p>
+
+      <div class="gate-seal-wrap">
+        <div class="mandala-dashed"></div>
+        <div class="mandala-glass"></div>
+        <div class="mandala-pulse"></div>
+        <div class="gate-monogram">V<span>&amp;</span>C</div>
+      </div>
+
+      <h2 class="gate-names">Vanshika &amp; Chaksu</h2>
+      <p class="gate-date"><span class="shimmer">24 . 11 . 2026</span></p>
+
+      <button type="button" class="btn-open" id="btnOpenInvite">
+        <span class="shimmer"></span>
+        <span>Open the invitation</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN INVITATION CONTENT
+       ======================================================================== -->
+  <main>
+
+    <!-- 2. HERO SECTION WITH MUGHAL ARCH -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop" id="heroBackdrop">
+        <img src="https://media.invitestory.in/sage-parchment/src/assets/hero-arch.jpg"
+          alt="Illustrated Mughal arch with an Indian bride and groom surrounded by lotus flowers" class="hero-img"
+          id="heroImg" loading="eager">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+      <div class="hero-fade-bottom"></div>
+
+      <div class="hero-content">
+        <p class="hero-kicker reveal-on-scroll">Together with their families</p>
+        <h1 class="hero-names reveal-on-scroll">
+          Vanshika <span class="hero-and shimmer">and</span><br>Chaksu
+        </h1>
+        <div class="gold-rule w-52 reveal-on-scroll"></div>
+        <p class="hero-invitation-line reveal-on-scroll">cordially invite you to celebrate their wedding</p>
+        <p class="hero-date reveal-on-scroll"><span class="shimmer">24 . 11 . 2026</span></p>
+        <p class="hero-venue-tag reveal-on-scroll">SN Auditorium Olari</p>
+      </div>
+
+      <div class="hero-scroll-indicator" id="scrollIndicator">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- 3. LIVE COUNTDOWN SECTION -->
+    <section class="countdown-section reveal-on-scroll" id="countdown">
+      <p class="section-kicker" id="countdownStatus">Counting down to the celebration</p>
+      <div class="gold-rule w-32"></div>
+
+      <div class="countdown-grid">
+        <div class="countdown-card">
+          <span class="countdown-val" id="cdDays">--</span>
+          <span class="countdown-lbl">Days</span>
+        </div>
+        <div class="countdown-card">
+          <span class="countdown-val" id="cdHours">--</span>
+          <span class="countdown-lbl">Hours</span>
+        </div>
+        <div class="countdown-card">
+          <span class="countdown-val" id="cdMinutes">--</span>
+          <span class="countdown-lbl">Min</span>
+        </div>
+        <div class="countdown-card">
+          <span class="countdown-val" id="cdSeconds">--</span>
+          <span class="countdown-lbl">Sec</span>
+        </div>
+      </div>
+
+      <p class="countdown-subtext">Tuesday, 24 Nov 2026</p>
+    </section>
+
+    <!-- 4. OUR STORY SECTION -->
+    <section class="story-section" id="story">
+      <div class="reveal-on-scroll">
+        <h2 class="section-title">Our Story</h2>
+        <div class="gold-rule w-24"></div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- 2024: The First Meeting -->
+        <article class="story-item reveal-on-scroll">
+          <span class="timeline-diamond"></span>
+          <div class="story-row">
+            <div class="story-col-img">
+              <div class="story-card-img">
+                <img src="https://media.invitestory.in/sage-parchment/src/assets/story-2.jpg" alt="The First Meeting"
+                  loading="lazy">
+              </div>
+            </div>
+            <div class="story-col-text">
+              <p class="story-year">2024</p>
+              <h3 class="story-title">The First Meeting</h3>
+              <p class="story-desc">
+                A warm introduction, shared smiles, and a conversation that effortlessly turned into something
+                meaningful.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2025: Growing Together -->
+        <article class="story-item reveal-on-scroll">
+          <span class="timeline-diamond"></span>
+          <div class="story-row">
+            <div class="story-col-img">
+              <div class="story-card-img">
+                <img src="https://media.invitestory.in/sage-parchment/src/assets/story-3.jpg" alt="Growing Together"
+                  loading="lazy">
+              </div>
+            </div>
+            <div class="story-col-text">
+              <p class="story-year">2025</p>
+              <h3 class="story-title">Growing Together</h3>
+              <p class="story-desc">
+                Cherished memories, mutual understanding, and two souls discovering their perfect match.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2026: The Wedding -->
+        <article class="story-item reveal-on-scroll">
+          <span class="timeline-diamond"></span>
+          <div class="story-row">
+            <div class="story-col-img">
+              <div class="story-card-img">
+                <img src="https://media.invitestory.in/sage-parchment/src/assets/story-1.jpg" alt="The Wedding"
+                  loading="lazy">
+              </div>
+            </div>
+            <div class="story-col-text">
+              <p class="story-year">2026</p>
+              <h3 class="story-title">The Wedding</h3>
+              <p class="story-desc">
+                Surrounded by our loved ones, we celebrate this joyous milestone and begin our journey together.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. THE WEDDING ARCH CARD (INVITATION DETAILS) -->
+    <section class="event-card-section" id="wedding">
+      <div class="arch-card-wrap reveal-on-scroll">
+        <div class="arch-card">
+          <p class="arch-card-tag">The Wedding</p>
+          <p class="arch-card-date"><span class="shimmer">24 . 11 . 2026</span></p>
+          <div class="gold-rule w-28"></div>
+
+          <ul class="event-details-list">
+            <li>
+              <div class="event-icon-wrap">
+                <!-- Clock Icon -->
+                <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="event-text">
+                <span class="event-title">Tuesday, 24 November 2026</span>
+                <div class="event-schedule">
+                  <div class="event-schedule-item">
+                    <strong>11:00 AM</strong> <span>— Barat</span>
+                  </div>
+                  <div class="event-schedule-item">
+                    <strong>11:30 AM</strong> <span>— Barat Welcome</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="event-icon-wrap">
+                <!-- Map Pin Icon -->
+                <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z">
+                  </path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="event-text">
+                <span class="event-title">SN Auditorium Olari</span>
+                <span class="event-sub" style="opacity: 0.75; font-size: 0.8rem;">Sree Narayana Road, Kadavaram Rd,
+                  Olarikkara, Thrissur</span>
+              </div>
+            </li>
+            <li>
+              <div class="event-icon-wrap">
+                <!-- Shirt/Attire Icon -->
+                <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z">
+                  </path>
+                </svg>
+              </div>
+              <div class="event-text">
+                <span class="event-title">Traditional / Festive Indian Attire</span>
+              </div>
+            </li>
+          </ul>
+
+          <p class="arch-card-note">Lunch and celebrations to follow</p>
+
+          <div class="card-actions">
+            <!-- Add to Google Calendar -->
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The+Wedding+of+Vanshika+%26+Chaksu&dates=20261124T053000Z%2F20261124T103000Z&details=Together+with+their+families+cordially+invite+you+to+celebrate+their+wedding.%0A%0ASchedule%3A%0A11%3A00+AM+-+Barat%0A11%3A30+AM+-+Barat+Welcome%0A%0AVenue%3A+SN+Auditorium+Olari%2C+Sree+Narayana+Road%2C+Kadavaram+Rd%2C+Olarikkara%2C+Thrissur%2C+Kerala+680012%0ADress+code%3A+Traditional+%2F+Festive+Indian+Attire%0ANote%3A+Lunch+and+celebrations+to+follow&location=SN+Auditorium+Olari%2C+Sree+Narayana+Road%2C+Kadavaram+Rd%2C+Olarikkara%2C+Thrissur%2C+Kerala+680012"
+              target="_blank" rel="noreferrer" class="btn-pine">
+              <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 19h6"></path>
+                <path d="M16 2v4"></path>
+                <path d="M19 16v6"></path>
+                <path d="M21 12.598V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.5"></path>
+                <path d="M3 10h18"></path>
+                <path d="M8 2v4"></path>
+              </svg>
+              Add to Calendar
+            </a>
+
+            <!-- Get Directions -->
+            <a href="https://maps.app.goo.gl/qJkMpg9ghiDaAtKB9?g_st=ac" target="_blank" rel="noreferrer"
+              class="btn-outline-gold">
+              <svg style="width: 15px; height: 15px;" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. THE VENUE SECTION -->
+    <section class="venue-section" id="venue">
+      <div class="venue-wrap reveal-on-scroll">
+        <h2 class="section-title">The Venue</h2>
+        <div class="gold-rule w-24"></div>
+
+        <a href="https://maps.app.goo.gl/qJkMpg9ghiDaAtKB9?g_st=ac" target="_blank" rel="noreferrer"
+          class="venue-card-img" title="Open SN Auditorium on Google Maps">
+          <img src="https://media.invitestory.in/sage-parchment/src/assets/map-preview.jpg"
+            alt="Illustrated map showing the location of SN Auditorium Olari" loading="lazy">
+          <span class="venue-pill">
+            <svg style="width: 14px; height: 14px; color: var(--gold);" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+            Open in Maps
+          </span>
+        </a>
+
+        <h3 class="venue-name">SN Auditorium Olari</h3>
+        <p class="venue-addr">Sree Narayana Road, Kadavaram Rd, Olarikkara, Thrissur, Kerala 680012</p>
+
+        <div style="margin-top: 24px;">
+          <a href="https://maps.app.goo.gl/qJkMpg9ghiDaAtKB9?g_st=ac" target="_blank" rel="noreferrer"
+            class="btn-outline-gold">
+            Get directions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. MOMENTS (CAROUSEL & LIGHTBOX) -->
+    <section class="moments-section" id="moments">
+      <div class="reveal-on-scroll">
+        <h2 class="section-title">Moments</h2>
+        <div class="gold-rule w-24"></div>
+      </div>
+
+      <div class="gallery-scroll" id="galleryScroll">
+        <!-- Photo 1 -->
+        <div class="gallery-item" data-full="https://media.invitestory.in/sage-parchment/src/assets/story-2.jpg"
+          data-alt="The couple in a lotus garden">
+          <img src="https://media.invitestory.in/sage-parchment/src/assets/story-2.jpg"
+            alt="The couple in a lotus garden" loading="lazy">
+        </div>
+        <!-- Photo 2 -->
+        <div class="gallery-item" data-full="https://media.invitestory.in/sage-parchment/src/assets/story-1.jpg"
+          data-alt="The couple seated under a golden mandap">
+          <img src="https://media.invitestory.in/sage-parchment/src/assets/story-1.jpg"
+            alt="The couple seated under a golden mandap" loading="lazy">
+        </div>
+        <!-- Photo 3 -->
+        <div class="gallery-item" data-full="https://media.invitestory.in/sage-parchment/src/assets/story-3.jpg"
+          data-alt="Mehendi and haldi celebrations">
+          <img src="https://media.invitestory.in/sage-parchment/src/assets/story-3.jpg"
+            alt="Mehendi and haldi celebrations" loading="lazy">
+        </div>
+        <!-- Photo 4 -->
+        <div class="gallery-item" data-full="https://media.invitestory.in/sage-parchment/src/assets/hero-arch.jpg"
+          data-alt="The couple beneath an ornate golden arch">
+          <img src="https://media.invitestory.in/sage-parchment/src/assets/hero-arch.jpg"
+            alt="The couple beneath an ornate golden arch" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FAMILY BLESSING SECTION -->
+    <section class="blessing-section" id="blessing">
+      <div class="blessing-wrap reveal-on-scroll">
+        <div class="gold-rule w-20"></div>
+        <p class="blessing-text">May your intentions be one, may your hearts beat as one.</p>
+        <p class="blessing-translation">“Two families, one thread of gold — and a lifetime of happiness made luminous
+          together.”</p>
+        <p class="blessing-source">A blessing from both families</p>
+        <div class="gold-rule w-20" style="margin-top: 32px;"></div>
+      </div>
+    </section>
+
+    <!-- 9. FOOTER SECTION -->
+    <footer class="footer-section" id="footer">
+      <img src="https://media.invitestory.in/sage-parchment/src/assets/footer-floral.jpg" alt="" class="footer-bg"
+        aria-hidden="true" loading="lazy">
+      <div class="footer-overlay"></div>
+
+      <div class="footer-content reveal-on-scroll">
+        <p class="footer-names">Vanshika <span>&amp;</span> Chaksu</p>
+        <div class="gold-rule w-24"></div>
+        <p class="footer-msg">With love &amp; warm wishes from the Families</p>
+
+        <div>
+          <!-- WhatsApp Wishes Button -->
+          <a href="https://wa.me/?text=Congratulations%20Vanshika%20%26%20Chaksu%20on%20your%20Wedding!%20Wishing%20you%20both%20a%20lifetime%20of%20love%20and%20happiness.%20https%3A%2F%2Fsage-parchment.invitestory.in%2F"
+            target="_blank" rel="noreferrer" class="btn-wishes">
+            <svg style="width: 15px; height: 15px; color: #25D366;" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z" />
+            </svg>
+            Send Wishes on WhatsApp
+          </a>
+        </div>
+
+        <p class="footer-hashtag">#VanshikawedsChaksu</p>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ========================================================================
+       LIGHTBOX MODAL FOR GALLERY
+       ======================================================================== -->
+  <div id="lightbox" aria-modal="true" role="dialog">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+    <img src="" alt="Fullscreen moment" class="lightbox-img" id="lightboxImg">
+  </div>
+
+  <!-- Audio Element with Elegant Indian Classical Sitar & Flute melody -->
+  <audio id="bgAudio" loop preload="none">
+    <source src="https://media.invitestory.in/music/sage-parchment-melody.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- ========================================================================
+       JAVASCRIPT: INTERACTIVE FLOW & LOGIC
+       ======================================================================== -->
+  <script>
+    (function () {
+      // 1. GATEFOLD LOGIC: "Open the invitation"
+      const gatefold = document.getElementById('gatefold');
+      const btnOpenInvite = document.getElementById('btnOpenInvite');
+      const body = document.body;
+
+      btnOpenInvite.addEventListener('click', function () {
+        gatefold.classList.add('opened');
+        body.classList.remove('locked');
+
+        // Start background music seamlessly on user gesture
+        playAudio();
+
+        // Remove from DOM interaction after doors finish swinging open
+        setTimeout(function () {
+          gatefold.classList.add('hidden');
+        }, 1800);
+      });
+
+      // 2. SCROLL PROGRESS INDICATOR & PARALLAX
+      const scrollProgress = document.getElementById('scrollProgress');
+      const heroImg = document.getElementById('heroImg');
+      const scrollIndicator = document.getElementById('scrollIndicator');
+
+      window.addEventListener('scroll', function () {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / docHeight) * 100;
+        scrollProgress.style.width = progress + '%';
+
+        // Subtle parallax on hero image
+        if (scrollTop < window.innerHeight) {
+          heroImg.style.transform = 'translate3d(0, ' + (scrollTop * 0.12) + 'px, 0)';
+          if (scrollIndicator) {
+            scrollIndicator.style.opacity = Math.max(0, 1 - (scrollTop / 200));
+          }
+        }
+      }, { passive: true });
+
+      // 3. INTERSECTION OBSERVER FOR SMOOTH REVEAL ANIMATIONS
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      document.querySelectorAll('.reveal-on-scroll').forEach(function (el) {
+        observer.observe(el);
+      });
+
+      // 4. LIVE COUNTDOWN TIMER
+      const targetDate = new Date('2026-11-24T11:00:00+05:30').getTime();
+      const elDays = document.getElementById('cdDays');
+      const elHours = document.getElementById('cdHours');
+      const elMinutes = document.getElementById('cdMinutes');
+      const elSeconds = document.getElementById('cdSeconds');
+      const elStatus = document.getElementById('countdownStatus');
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff <= 0) {
+          elDays.textContent = '00';
+          elHours.textContent = '00';
+          elMinutes.textContent = '00';
+          elSeconds.textContent = '00';
+          if (elStatus) elStatus.textContent = 'Today is the day!';
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        elDays.textContent = String(days).padStart(2, '0');
+        elHours.textContent = String(hours).padStart(2, '0');
+        elMinutes.textContent = String(minutes).padStart(2, '0');
+        elSeconds.textContent = String(seconds).padStart(2, '0');
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      // 5. FLOATING LOTUS PETALS GENERATOR
+      const petalsContainer = document.getElementById('petalsContainer');
+      const petalSrc = 'https://media.invitestory.in/sage-parchment/src/assets/lotus.png';
+      const petalCount = 8;
+
+      for (let i = 0; i < petalCount; i++) {
+        const petal = document.createElement('img');
+        petal.src = petalSrc;
+        petal.className = 'petal';
+        petal.alt = '';
+        petal.setAttribute('aria-hidden', 'true');
+
+        const left = (i * 12.5 + (i % 3) * 4) % 94;
+        const size = 12 + (i * 5) % 14;
+        const dur = 18 + (i * 4) % 14;
+        const delay = -(i * 3.2);
+        const drift = (i % 2 === 0 ? 1 : -1) * (30 + (i * 11) % 65);
+        const opacity = 0.16 + (i % 3) * 0.06;
+
+        petal.style.left = left + '%';
+        petal.style.width = size + 'px';
+        petal.style.height = size + 'px';
+        petal.style.setProperty('--dur', dur + 's');
+        petal.style.setProperty('--delay', delay + 's');
+        petal.style.setProperty('--drift', drift + 'px');
+        petal.style.setProperty('--op', opacity);
+
+        // Fallback if image blocked
+        petal.onerror = function () {
+          this.style.display = 'none';
+        };
+
+        petalsContainer.appendChild(petal);
+      }
+
+      // 6. GALLERY LIGHTBOX MODAL
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      galleryItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+          const fullSrc = this.getAttribute('data-full');
+          const altText = this.getAttribute('data-alt');
+          lightboxImg.src = fullSrc;
+          lightboxImg.alt = altText || '';
+          lightbox.classList.add('active');
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+      }
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+          closeLightbox();
+        }
+      });
+
+      // 7. BACKGROUND MUSIC: MODERN HAPPY INDIAN WEDDING FLUTE (BANSURI) ENGINE
+      const musicToggle = document.getElementById('musicToggle');
+      const equalizer = document.getElementById('equalizer');
+      const bgAudio = document.getElementById('bgAudio');
+      let isPlaying = false;
+      let audioCtx = null;
+      let fluteTimer = null;
+      let droneNodes = [];
+      let delayNode = null;
+      let masterGain = null;
+      let noteIndex = 0;
+
+      // D Major (Raag Hansadhwani / Pahadi) Notes for joyous Indian wedding bansuri
+      const D3 = 146.83, A3 = 220.00;
+      const D4 = 293.66, E4 = 329.63, Fs4 = 369.99, G4 = 392.00, A4 = 440.00, B4 = 493.88;
+      const Cs5 = 554.37, D5 = 587.33, E5 = 659.25, Fs5 = 739.99, A5 = 880.00;
+
+      // Joyful, modern, happy Indian wedding flute composition (melodious & festive)
+      const WEDDING_MELODY = [
+        // Phrase 1: Sweet festive invocation (Aalap to joy)
+        { f: A4, d: 0.52, meend: true },
+        { f: B4, d: 0.36, meend: true },
+        { f: D5, d: 1.15, vib: true },
+        { f: 0, d: 0.22 }, // breath
+
+        // Phrase 2: Joyful wedding theme (Mukhda)
+        { f: D5, d: 0.45, meend: true },
+        { f: E5, d: 0.45, meend: true },
+        { f: Fs5, d: 0.95, vib: true },
+        { f: E5, d: 0.32 },
+        { f: D5, d: 0.32 },
+        { f: B4, d: 0.45, meend: true },
+        { f: D5, d: 1.15, vib: true },
+        { f: 0, d: 0.22 },
+
+        // Phrase 3: Playful romantic flourish (Chulbuli)
+        { f: Fs5, d: 0.36 },
+        { f: A5, d: 0.75, vib: true },
+        { f: Fs5, d: 0.35 },
+        { f: E5, d: 0.35 },
+        { f: D5, d: 0.48, meend: true },
+        { f: E5, d: 1.05, vib: true },
+        { f: 0, d: 0.22 },
+
+        // Phrase 4: Happy celebration jump
+        { f: B4, d: 0.35 },
+        { f: D5, d: 0.35 },
+        { f: E5, d: 0.38 },
+        { f: Fs5, d: 0.65, meend: true },
+        { f: E5, d: 0.32 },
+        { f: D5, d: 0.32 },
+        { f: B4, d: 0.42 },
+        { f: A4, d: 0.95, vib: true },
+        { f: 0, d: 0.20 },
+
+        // Climax: Grand festive cadence (Wedding Baraat cheer)
+        { f: Fs4, d: 0.32 },
+        { f: A4, d: 0.32 },
+        { f: B4, d: 0.40 },
+        { f: D5, d: 0.65, vib: true },
+        { f: E5, d: 0.42, meend: true },
+        { f: Fs5, d: 0.78, vib: true },
+        { f: E5, d: 0.30 },
+        { f: D5, d: 0.30 },
+        { f: B4, d: 0.42 },
+        { f: A4, d: 0.42 },
+        { f: D4, d: 1.65, vib: true },
+        { f: 0, d: 0.45 } // joyful pause before loop
+      ];
+
+      function initAudio() {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+          masterGain = audioCtx.createGain();
+          masterGain.gain.setValueAtTime(0.75, audioCtx.currentTime);
+          masterGain.connect(audioCtx.destination);
+
+          // Palace Mandap Acoustic Echo / Reverb Delay
+          delayNode = audioCtx.createDelay();
+          delayNode.delayTime.setValueAtTime(0.26, audioCtx.currentTime);
+
+          const delayFeedback = audioCtx.createGain();
+          delayFeedback.gain.setValueAtTime(0.28, audioCtx.currentTime);
+
+          const delayFilter = audioCtx.createBiquadFilter();
+          delayFilter.type = 'lowpass';
+          delayFilter.frequency.setValueAtTime(1800, audioCtx.currentTime);
+
+          delayNode.connect(delayFilter);
+          delayFilter.connect(delayFeedback);
+          delayFeedback.connect(delayNode);
+          delayFilter.connect(masterGain);
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+      }
+
+      // Synthesizes a natural, expressive Indian bamboo bansuri flute voice
+      function playBansuriNote(freq, duration, hasMeend, hasVibrato) {
+        if (!audioCtx || audioCtx.state !== 'running' || !isPlaying) return;
+
+        const now = audioCtx.currentTime;
+
+        // 1. Bamboo flute tube oscillator (triangle wave)
+        const osc1 = audioCtx.createOscillator();
+        osc1.type = 'triangle';
+        osc1.frequency.setValueAtTime(freq, now);
+
+        // 2. Air / shimmer harmonic (sine at 2nd octave)
+        const osc2 = audioCtx.createOscillator();
+        osc2.type = 'sine';
+        osc2.frequency.setValueAtTime(freq * 2, now);
+
+        // 3. Indian Meend (subtle finger portamento glide)
+        if (hasMeend) {
+          osc1.frequency.setValueAtTime(freq * 0.94, now);
+          osc1.frequency.exponentialRampToValueAtTime(freq, now + 0.08);
+          osc2.frequency.setValueAtTime(freq * 1.88, now);
+          osc2.frequency.exponentialRampToValueAtTime(freq * 2, now + 0.08);
+        }
+
+        // 4. Bansuri Vibrato (sweet delayed modulation)
+        let lfo = null;
+        let lfoGain = null;
+        if (hasVibrato && duration > 0.45) {
+          lfo = audioCtx.createOscillator();
+          lfoGain = audioCtx.createGain();
+          lfo.frequency.setValueAtTime(5.4, now);
+          lfoGain.gain.setValueAtTime(0, now);
+          lfoGain.gain.setValueAtTime(0, now + 0.16);
+          lfoGain.gain.linearRampToValueAtTime(freq * 0.016, now + 0.42);
+          lfo.connect(lfoGain);
+          lfoGain.connect(osc1.frequency);
+          lfo.start(now + 0.14);
+          lfo.stop(now + duration + 0.1);
+        }
+
+        // 5. Warm Bamboo Acoustic Body Filter
+        const filter = audioCtx.createBiquadFilter();
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(Math.min(2800, freq * 3.6), now);
+        filter.Q.setValueAtTime(2.0, now);
+
+        // 6. Natural Breath Attack and Release Envelope
+        const noteGain = audioCtx.createGain();
+        const peak = 0.24;
+        noteGain.gain.setValueAtTime(0.0001, now);
+        noteGain.gain.linearRampToValueAtTime(peak, now + 0.06); // breath onset
+        noteGain.gain.setValueAtTime(peak * 0.94, now + duration * 0.7);
+        noteGain.gain.exponentialRampToValueAtTime(0.0001, now + duration + 0.07);
+
+        const osc2Gain = audioCtx.createGain();
+        osc2Gain.gain.setValueAtTime(0.05, now);
+
+        // Connections
+        osc1.connect(noteGain);
+        osc2.connect(osc2Gain);
+        osc2Gain.connect(noteGain);
+        noteGain.connect(filter);
+        filter.connect(masterGain);
+        if (delayNode) filter.connect(delayNode);
+
+        osc1.start(now);
+        osc2.start(now);
+        osc1.stop(now + duration + 0.1);
+        osc2.stop(now + duration + 0.1);
+      }
+
+      // Festive silver chime / manjira accent on celebratory beats
+      function playFestiveChime(time) {
+        if (!audioCtx || !isPlaying) return;
+        const bell = audioCtx.createOscillator();
+        const bellGain = audioCtx.createGain();
+        bell.type = 'sine';
+        bell.frequency.setValueAtTime(2349.32, time); // D7 sparkle
+        bellGain.gain.setValueAtTime(0.018, time);
+        bellGain.gain.exponentialRampToValueAtTime(0.0001, time + 0.32);
+        bell.connect(bellGain);
+        bellGain.connect(masterGain);
+        bell.start(time);
+        bell.stop(time + 0.33);
+      }
+
+      // Warm Tanpura Drone (Sa - Pa - Sa')
+      function startTanpuraDrone() {
+        if (!audioCtx) return;
+        const now = audioCtx.currentTime;
+        [D3, A3, D4].forEach(function (dFreq, idx) {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          const pFilter = audioCtx.createBiquadFilter();
+
+          osc.type = (idx === 1) ? 'sine' : 'triangle';
+          osc.frequency.setValueAtTime(dFreq, now);
+
+          pFilter.type = 'lowpass';
+          pFilter.frequency.setValueAtTime(650, now);
+
+          gain.gain.setValueAtTime(0.0001, now);
+          gain.gain.linearRampToValueAtTime(0.026 / (idx + 1), now + 1.8);
+
+          osc.connect(pFilter);
+          pFilter.connect(gain);
+          gain.connect(masterGain);
+
+          osc.start(now);
+          droneNodes.push({ osc: osc, gain: gain });
+        });
+      }
+
+      function stepMelody() {
+        if (!isPlaying || !audioCtx) return;
+
+        const item = WEDDING_MELODY[noteIndex];
+        if (item.f > 0) {
+          playBansuriNote(item.f, item.d, item.meend, item.vib);
+          // Accented festive chimes on key wedding highlights
+          if (noteIndex === 2 || noteIndex === 6 || noteIndex === 14 || noteIndex === 26) {
+            playFestiveChime(audioCtx.currentTime + 0.04);
+          }
+        }
+
+        const waitMs = item.d * 1000;
+        noteIndex = (noteIndex + 1) % WEDDING_MELODY.length;
+        fluteTimer = setTimeout(stepMelody, waitMs);
+      }
+
+      function playAudio() {
+        if (isPlaying) return;
+        try {
+          initAudio();
+          isPlaying = true;
+          equalizer.classList.add('playing');
+          startTanpuraDrone();
+          stepMelody();
+        } catch (e) {
+          console.warn('Web Audio playback error', e);
+        }
+      }
+
+      function stopAudio() {
+        if (!isPlaying) return;
+        isPlaying = false;
+        equalizer.classList.remove('playing');
+
+        if (fluteTimer) {
+          clearTimeout(fluteTimer);
+          fluteTimer = null;
+        }
+
+        droneNodes.forEach(function (d) {
+          try {
+            d.gain.gain.linearRampToValueAtTime(0.0001, audioCtx.currentTime + 0.2);
+            setTimeout(function () { d.osc.stop(); }, 250);
+          } catch (e) { }
+        });
+        droneNodes = [];
+        noteIndex = 0;
+
+        if (audioCtx && audioCtx.state === 'running') {
+          audioCtx.suspend();
+        }
+      }
+
+      musicToggle.addEventListener('click', function () {
+        if (isPlaying) {
+          stopAudio();
+        } else {
+          playAudio();
+        }
+      });
+
+    })();
+  </script>
+</body>
+
+</html>
